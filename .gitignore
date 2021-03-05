@@ -1,3 +1,7 @@
+# Node ignores
 node_modules/
 .cache/
 public
+
+# Other ignores
+*.sh
