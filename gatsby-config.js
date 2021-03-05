@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "perona-dev",
+    title: `Justin Perona`,
+    siteUrl: `https://perona.dev`,
+    description: `Personal website for Justin Perona. Computer scientist in the San Francisco Bay Area.`,
   },
   plugins: [
     "gatsby-plugin-image",
