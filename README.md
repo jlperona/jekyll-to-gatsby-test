@@ -1,3 +1,3 @@
-# perona-dev
+# jekyll-to-gatsby-test
 
-Eventual migration of my personal website over to Gatsby and Netlify.
+Experiments in moving [my personal website](https://perona.dev) from Jekyll to Gatsby.

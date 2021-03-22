@@ -1,8 +1,8 @@
 ---
-title    : GPGPU-Sim Dockerfiles
-excerpt  : Dealing with dependency hell in simulating GPU workloads.
-header   :
-  teaser : /assets/images/projects/gpgpu-sim-dockerfiles/teaser.jpg
+title: GPGPU-Sim Dockerfiles
+excerpt: Dealing with dependency hell in simulating GPU workloads.
+header:
+  teaser: /assets/images/projects/gpgpu-sim-dockerfiles/teaser.jpg
 ---
 
 This project writeup was originally posted on Medium in 2018.
@@ -12,13 +12,13 @@ To reflect this, the writeup below has been modified from [the original one on M
 You can find the Dockerfiles on GitHub at [jlperona/gpgpu-sim-dockerfiles](https://github.com/jlperona/gpgpu-sim-dockerfiles).
 You can also find the containers that they build on [Docker Hub](https://hub.docker.com/u/jlperona/).
 
-![The teaser image, which is picture of a hamster on a wheel. Representative of what is to come.]({{ page.header.teaser }})
+![The teaser image, which is picture of a hamster on a wheel. Representative of what is to come.](../../../images/projects/gpgpu-sim-dockerfiles/teaser.jpg)
 
 ## Background
 
 During the course of my Master's degree, I took EEC 289Q (Modern Parallel Computing) with [Professor John Owens](https://www.ece.ucdavis.edu/~jowens/home.html).
 My choice for the final project for that class was to try to get a machine learning workload running on [GPGPU-Sim](https://github.com/gpgpu-sim/gpgpu-sim_distribution), a cycle-level GPU simulator that can run CUDA and OpenCL workloads.
-Little did I know that I would be subjecting myself to one of the worst hells imaginable—*dependency hell*.
+Little did I know that I would be subjecting myself to one of the worst hells imaginable—_dependency hell_.
 
 ### Praise to be Docker
 
@@ -31,7 +31,7 @@ This is where Docker comes in and saves the day.
 Thanks to a [Docker container](https://hub.docker.com/r/powerjg/gpgpu-sim-build/) provided by the professor that I was working with, I was able to build [GPGPU-Sim’s dev branch](https://github.com/gpgpu-sim/gpgpu-sim_distribution/tree/dev).
 I wouldn’t have been able to get as far as I did if it weren’t for Docker.
 
-That Docker container contains all the dependencies needed to build the dev branch of GPGPU-Sim, *with one exception*: you need to delete lines 552–577 of libcuda/cuda_runtime_api.cc.
+That Docker container contains all the dependencies needed to build the dev branch of GPGPU-Sim, _with one exception_: you need to delete lines 552–577 of libcuda/cuda_runtime_api.cc.
 This deletes any reference to cudaMemcpyDefault(), which isn’t in the version of CUDA installed in the container.
 
 Spurious hack aside, if you wanted to start working with GPGPU-Sim in 2018, that would have been a good place to do so.
@@ -82,7 +82,7 @@ I tried the one listed on their installation documentation, which no longer exis
 
 I found a couple ML workloads that seemed promising, now I needed to get them to work.
 Easier said than done.
-I mentioned *dependency hell* before—this is that hell.
+I mentioned _dependency hell_ before—this is that hell.
 
 ### Pannotia
 
@@ -143,8 +143,8 @@ Trying to get this to work was a frustrating experience.
 I didn’t end up getting anything working in the end.
 However, two good things came out of this experience:
 
-* This post, so that the next person who tries to do this may have some background material.
-* The [Dockerfiles](https://github.com/jlperona/gpgpu-sim-dockerfiles/tree/master/dockerfiles) and [Docker containers](https://hub.docker.com/u/jlperona/) that I’ve hosted on GitHub and Docker Hub, respectively.
+- This post, so that the next person who tries to do this may have some background material.
+- The [Dockerfiles](https://github.com/jlperona/gpgpu-sim-dockerfiles/tree/master/dockerfiles) and [Docker containers](https://hub.docker.com/u/jlperona/) that I’ve hosted on GitHub and Docker Hub, respectively.
 
 My hope is that somebody who’s searching for this exact issue in the future finds this post and can use my past experiences to save them some time and frustration.
 Let’s make this the opposite of [Wisdom of the Ancients](https://xkcd.com/979/).

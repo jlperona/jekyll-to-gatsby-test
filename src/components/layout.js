@@ -16,6 +16,12 @@ export default function Layout({ children }) {
   );
   return (
     <div>
+      <StaticImage
+        src="../images/site/masthead.jpg"
+        alt="Site logo depicting a calico cat."
+        loading="eager"
+        height="200"
+      />
       <Link to={`/`}>
         <h3>{data.site.siteMetadata.title}</h3>
       </Link>

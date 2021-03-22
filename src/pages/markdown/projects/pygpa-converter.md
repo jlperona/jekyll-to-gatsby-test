@@ -1,38 +1,38 @@
 ---
-title          : pygpa-converter
-excerpt        : Python script to take international student transcript data and output a 4.0 scale GPA.
-header         :
-  teaser       : /assets/images/projects/pygpa-converter/teaser.png
-gallery        :
-  - url        : /assets/images/projects/pygpa-converter/gallery-1.jpg
-    image_path : /assets/images/projects/pygpa-converter/gallery-1.jpg
-    alt        : >-
-                 A spreadsheet of Indian universities that maps their letter grades to the Indian 10-point grade scale.
-                 You can find this spreadsheet on this project's GitHub repository.
-    title      : >-
-                 A spreadsheet of Indian universities that maps their letter grades to the Indian 10-point grade scale.
-                 You can find this spreadsheet at https://github.com/jlperona/pygpa-converter/blob/master/data/india10.csv.
-  - url        : /assets/images/projects/pygpa-converter/gallery-2.jpg
-    image_path : /assets/images/projects/pygpa-converter/gallery-2.jpg
-    alt        : >-
-                 A test spreadsheet for verifying that GPA conversions that are correct.
-                 Normally, student transcript data would be input in each row.
-    title      : >-
-                 A test spreadsheet for verifying that GPA conversions that are correct.
-                 Normally, student transcript data would be input in each row.
-  - url        : /assets/images/projects/pygpa-converter/gallery-3.jpg
-    image_path : /assets/images/projects/pygpa-converter/gallery-3.jpg
-    alt        : >-
-                 The result of running pygpa-converter on the test spreadsheet from the previous picture.
-                 For each grade scale (or student in normal usage) pygpa-converter computes the input's 4.0 GPA scale-equivalent.
-    title      : >-
-                 The result of running pygpa-converter on the test spreadsheet from the previous picture.
-                 For each grade scale (or student in normal usage) pygpa-converter computes the input's 4.0 GPA scale-equivalent.
+title: pygpa-converter
+excerpt: Python script to take international student transcript data and output a 4.0 scale GPA.
+header:
+  teaser: /assets/images/projects/pygpa-converter/teaser.png
+gallery:
+  - url: /assets/images/projects/pygpa-converter/gallery-1.jpg
+    image_path: /assets/images/projects/pygpa-converter/gallery-1.jpg
+    alt: >-
+      A spreadsheet of Indian universities that maps their letter grades to the Indian 10-point grade scale.
+      You can find this spreadsheet on this project's GitHub repository.
+    title: >-
+      A spreadsheet of Indian universities that maps their letter grades to the Indian 10-point grade scale.
+      You can find this spreadsheet at https://github.com/jlperona/pygpa-converter/blob/master/data/india10.csv.
+  - url: /assets/images/projects/pygpa-converter/gallery-2.jpg
+    image_path: /assets/images/projects/pygpa-converter/gallery-2.jpg
+    alt: >-
+      A test spreadsheet for verifying that GPA conversions that are correct.
+      Normally, student transcript data would be input in each row.
+    title: >-
+      A test spreadsheet for verifying that GPA conversions that are correct.
+      Normally, student transcript data would be input in each row.
+  - url: /assets/images/projects/pygpa-converter/gallery-3.jpg
+    image_path: /assets/images/projects/pygpa-converter/gallery-3.jpg
+    alt: >-
+      The result of running pygpa-converter on the test spreadsheet from the previous picture.
+      For each grade scale (or student in normal usage) pygpa-converter computes the input's 4.0 GPA scale-equivalent.
+    title: >-
+      The result of running pygpa-converter on the test spreadsheet from the previous picture.
+      For each grade scale (or student in normal usage) pygpa-converter computes the input's 4.0 GPA scale-equivalent.
 ---
 
 You can find this project on GitHub at [jlperona/pygpa-converter](https://github.com/jlperona/pygpa-converter).
 
-![The teaser image, which is a picture of the repository's name in GitHub's naming style.]({{ page.header.teaser }})
+![The teaser image, which is a picture of the repository's name in GitHub's naming style.](../../../images/projects/pygpa-converter/teaser.png)
 
 ## Background
 
@@ -60,7 +60,7 @@ See the [gallery below](#gallery) for input and output examples.
 
 [My first version of this script](https://github.com/jlperona/gpa-converter) was written in C++.
 I didn't know Python very well at the time, but I did know C++.
-That program was *okay*, but it wasn't great.
+That program was _okay_, but it wasn't great.
 The base of the program worked just fine, but eventually I decided I wanted to implement support for a specific type of grade scale used in India.
 This would have taken a significant amount of work to do in C++, but is fairly easy in Python.
 
